@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divine Success | Import & Export</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #0a1628;
+        --dark-navy: #050b14;
+        --blue: #1e3a5f;
+        --orange: #ff6b35;
+        --coral: #ff8c61;
+        --gold: #ffb84d;
+        --light: #f5f7fa;
+        --white: #ffffff;
+        --gray: #8b95a5;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        color: var(--navy);
+        overflow-x: hidden;
+        background: var(--white);
+      }
+
+      /* Smooth Scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Navigation */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(10, 22, 40, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 1.2rem 0;
+        transition: all 0.3s ease;
+      }
+
+      nav.scrolled {
+        padding: 0.8rem 0;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2rem;
+        color: var(--white);
+        letter-spacing: 2px;
+      }
+
+      .logo span {
+        color: var(--orange);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        font-size: 0.95rem;
+      }
+
+      .nav-links a:hover {
+        color: var(--orange);
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: 100vh;
+        background: linear-gradient(
+          135deg,
+          var(--dark-navy) 0%,
+          var(--navy) 50%,
+          var(--blue) 100%
+        );
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+          radial-gradient(
+            circle at 20% 50%,
+            rgba(255, 107, 53, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 80%,
+            rgba(255, 184, 77, 0.1) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+          linear-gradient(
+            30deg,
+            rgba(255, 107, 53, 0.05) 12%,
+            transparent 12.5%,
+            transparent 87%,
+            rgba(255, 107, 53, 0.05) 87.5%,
+            rgba(255, 107, 53, 0.05)
+          ),
+          linear-gradient(
+            150deg,
+            rgba(255, 107, 53, 0.05) 12%,
+            transparent 12.5%,
+            transparent 87%,
+            rgba(255, 107, 53, 0.05) 87.5%,
+            rgba(255, 107, 53, 0.05)
+          ),
+          linear-gradient(
+            30deg,
+            rgba(255, 107, 53, 0.05) 12%,
+            transparent 12.5%,
+            transparent 87%,
+            rgba(255, 107, 53, 0.05) 87.5%,
+            rgba(255, 107, 53, 0.05)
+          ),
+          linear-gradient(
+            150deg,
+            rgba(255, 107, 53, 0.05) 12%,
+            transparent 12.5%,
+            transparent 87%,
+            rgba(255, 107, 53, 0.05) 87.5%,
+            rgba(255, 107, 53, 0.05)
+          );
+        background-size: 80px 140px;
+        opacity: 0.3;
+        pointer-events: none;
+      }
+
+      .hero-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero-subtitle {
+        font-size: 0.95rem;
+        color: var(--orange);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+      }
+
+      .hero-title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(3rem, 8vw, 6.5rem);
+        color: var(--white);
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        letter-spacing: 2px;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease 0.2s forwards;
+      }
+
+      .hero-title .highlight {
+        color: var(--orange);
+        position: relative;
+        display: inline-block;
+      }
+
+      .hero-description {
+        font-size: 1.25rem;
+        color: var(--light);
+        max-width: 700px;
+        margin-bottom: 3rem;
+        line-height: 1.8;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease 0.4s forwards;
+      }
+
+      .hero-cta {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease 0.6s forwards;
+      }
+
+      .btn {
+        padding: 1.1rem 2.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        display: inline-block;
+        font-family: "Outfit", sans-serif;
+        cursor: pointer;
+        border: none;
+      }
+
+      .btn-primary {
+        background: var(--orange);
+        color: var(--white);
+        box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+      }
+
+      .btn-primary:hover {
+        background: var(--coral);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(255, 107, 53, 0.5);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--white);
+        border: 2px solid var(--white);
+      }
+
+      .btn-secondary:hover {
+        background: var(--white);
+        color: var(--navy);
+      }
+
+      /* Tag Line */
+      .tagline {
+        background: var(--light);
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+
+      .tagline-content {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .tagline h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        color: var(--navy);
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+      }
+
+      .tagline p {
+        font-size: 1.2rem;
+        color: var(--gray);
+        font-weight: 400;
+      }
+
+      /* What We Do Section */
+      .what-we-do {
+        padding: 6rem 2rem;
+        background: var(--white);
+      }
+
+      .section-container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .section-label {
+        font-size: 0.9rem;
+        color: var(--orange);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .section-title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        color: var(--navy);
+        letter-spacing: 1px;
+      }
+
+      .what-content {
+        display: grid;
+        gap: 3rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .what-text {
+        font-size: 1.15rem;
+        line-height: 1.9;
+        color: var(--navy);
+      }
+
+      .what-text strong {
+        color: var(--orange);
+        font-weight: 600;
+      }
+
+      /* Core Focus Section */
+      .core-focus {
+        padding: 6rem 2rem;
+        background: var(--navy);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .core-focus::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+          radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 107, 53, 0.08) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 90% 80%,
+            rgba(255, 184, 77, 0.08) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+      }
+
+      .core-focus .section-container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .core-focus .section-label {
+        color: var(--gold);
+      }
+
+      .core-focus .section-title {
+        color: var(--white);
+      }
+
+      .focus-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .focus-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 2.5rem;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .focus-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--orange), var(--gold));
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+
+      .focus-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .focus-card:hover {
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateY(-5px);
+        border-color: rgba(255, 107, 53, 0.3);
+      }
+
+      .focus-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .focus-card h3 {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+      }
+
+      .focus-card p {
+        color: var(--light);
+        line-height: 1.7;
+        font-size: 0.95rem;
+      }
+
+      /* Why Divine Success */
+      .why-section {
+        padding: 6rem 2rem;
+        background: linear-gradient(
+          135deg,
+          var(--orange) 0%,
+          var(--coral) 100%
+        );
+        position: relative;
+      }
+
+      .why-section::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+          linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.05) 25%,
+            transparent 25%
+          ),
+          linear-gradient(
+            -45deg,
+            rgba(255, 255, 255, 0.05) 25%,
+            transparent 25%
+          ),
+          linear-gradient(
+            45deg,
+            transparent 75%,
+            rgba(255, 255, 255, 0.05) 75%
+          ),
+          linear-gradient(
+            -45deg,
+            transparent 75%,
+            rgba(255, 255, 255, 0.05) 75%
+          );
+        background-size: 40px 40px;
+        opacity: 0.3;
+        pointer-events: none;
+      }
+
+      .why-section .section-container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .why-section .section-label {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .why-section .section-title {
+        color: var(--white);
+      }
+
+      .why-content {
+        display: grid;
+        gap: 2rem;
+        margin-top: 3rem;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .why-item {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 2rem;
+        border-left: 4px solid var(--white);
+      }
+
+      .why-item h3 {
+        font-size: 1.5rem;
+        color: var(--white);
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+      }
+
+      .why-item p {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.95);
+        line-height: 1.7;
+        font-style: italic;
+      }
+
+      /* Foundation Section */
+      .foundation {
+        padding: 6rem 2rem;
+        background: var(--dark-navy);
+      }
+
+      .foundation .section-label {
+        color: var(--gold);
+      }
+
+      .foundation .section-title {
+        color: var(--white);
+      }
+
+      .foundation-content {
+        max-width: 800px;
+        margin: 3rem auto 0;
+        text-align: center;
+      }
+
+      .foundation-text {
+        font-size: 1.2rem;
+        color: var(--light);
+        line-height: 1.9;
+        margin-bottom: 1.5rem;
+      }
+
+      .foundation-highlight {
+        font-size: 1.3rem;
+        color: var(--white);
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      /* About Us Section */
+      .about {
+        padding: 6rem 2rem;
+        background: var(--light);
+      }
+
+      .about-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        gap: 3rem;
+      }
+
+      .about-text {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        color: var(--navy);
+      }
+
+      .about-values {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .value-item {
+        background: var(--white);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        border-top: 3px solid var(--orange);
+      }
+
+      .value-item h3 {
+        font-size: 1.3rem;
+        color: var(--navy);
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+      }
+
+      .value-item p {
+        color: var(--gray);
+        line-height: 1.7;
+      }
+
+      /* Contact Section */
+      .contact {
+        padding: 6rem 2rem;
+        background: var(--navy);
+      }
+
+      .contact .section-label {
+        color: var(--gold);
+      }
+
+      .contact .section-title {
+        color: var(--white);
+      }
+
+      .contact-content {
+        max-width: 800px;
+        margin: 3rem auto 0;
+        text-align: center;
+      }
+
+      .contact-info {
+        display: grid;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: var(--light);
+        font-size: 1.1rem;
+      }
+
+      .contact-item a {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .contact-item a:hover {
+        color: var(--orange);
+      }
+
+      .social-links {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+
+      .social-link {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+
+      .social-link:hover {
+        background: var(--orange);
+        transform: translateY(-5px);
+        border-color: var(--white);
+      }
+
+      /* Footer */
+      footer {
+        background: var(--dark-navy);
+        padding: 2rem;
+        text-align: center;
+        color: var(--gray);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      footer p {
+        font-size: 0.95rem;
+      }
+
+      /* Scroll Animations */
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease;
+      }
+
+      .scroll-reveal.revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .nav-links {
+          gap: 1.5rem;
+          font-size: 0.9rem;
+        }
+
+        .hero-cta {
+          flex-direction: column;
+        }
+
+        .btn {
+          width: 100%;
+          text-align: center;
+        }
+
+        .focus-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .logo {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav-links {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">DIVINE <span>SUCCESS</span></div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-subtitle">IMPORT & EXPORT</div>
+        <h1 class="hero-title">
+          INTEGRITY-LED TRADE<br />
+          FOR <span class="highlight">GLOBAL MARKETS</span>
+        </h1>
+        <p class="hero-description">
+          Moving goods across borders responsibly – creating access, value, and
+          opportunity where affordability matters.
+        </p>
+        <div class="hero-cta">
+          <a href="https://wa.me/44" class="btn btn-primary"
+            >Supply Enquiries</a
+          >
+          <a href="https://wa.me/44" class="btn btn-secondary"
+            >Export Partnerships</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Tagline Section -->
+    <section class="tagline scroll-reveal">
+      <div class="tagline-content">
+        <h2>Not every market can afford new.</h2>
+        <p>Trade should still be done right.</p>
+      </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="services" class="what-we-do">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">WHAT WE DO</div>
+          <h2 class="section-title">Our Business</h2>
+        </div>
+        <div class="what-content">
+          <p class="what-text scroll-reveal">
+            <strong>Divine Success</strong> is an import and export business
+            specialising in the movement of
+            <strong>surplus, excess, and clearance goods</strong> from the UK
+            and Europe into international markets.
+          </p>
+          <p class="what-text scroll-reveal">
+            We focus on practical, <strong>container-based trade</strong> –
+            ensuring products reach markets where demand exists, affordability
+            matters, and supply gaps can be filled responsibly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Focus Section -->
+    <section class="core-focus">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">OUR EXPERTISE</div>
+          <h2 class="section-title">Core Focus</h2>
+        </div>
+        <div class="focus-grid">
+          <div class="focus-card scroll-reveal">
+            <div class="focus-icon">🌍</div>
+            <h3>Import & Export Logistics</h3>
+            <p>
+              Seamless cross-border movement of goods with full compliance and
+              efficiency.
+            </p>
+          </div>
+          <div class="focus-card scroll-reveal">
+            <div class="focus-icon">✨</div>
+            <h3>Ethical Global Trade</h3>
+            <p>
+              Committed to responsible trading practices that benefit all
+              parties.
+            </p>
+          </div>
+          <div class="focus-card scroll-reveal">
+            <div class="focus-icon">📦</div>
+            <h3>Container Shipping Solutions</h3>
+            <p>Efficient container-based logistics tailored to your needs.</p>
+          </div>
+          <div class="focus-card scroll-reveal">
+            <div class="focus-icon">📊</div>
+            <h3>Surplus & Excess Stock</h3>
+            <p>Specializing in clearance goods and overstock management.</p>
+          </div>
+          <div class="focus-card scroll-reveal">
+            <div class="focus-icon">🤝</div>
+            <h3>Long-term Partnerships</h3>
+            <p>
+              Building lasting relationships based on trust and mutual growth.
+            </p>
+          </div>
+          <div class="focus-card scroll-reveal">
+            <div class="focus-icon">🚢</div>
+            <h3>International Market Access</h3>
+            <p>Connecting UK/Europe suppliers with global buyers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Divine Success Section -->
+    <section id="why-us" class="why-section">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">OUR PHILOSOPHY</div>
+          <h2 class="section-title">Why Divine Success</h2>
+        </div>
+        <div class="why-content">
+          <div class="why-item scroll-reveal">
+            <h3>Sustainable Trade</h3>
+            <p>Global trade doesn't have to be wasteful or exploitative.</p>
+          </div>
+          <div class="why-item scroll-reveal">
+            <h3>Value Creation</h3>
+            <p>Goods should be used, not discarded.</p>
+          </div>
+          <div class="why-item scroll-reveal">
+            <h3>People First</h3>
+            <p>Trade should serve people, not pressure them.</p>
+          </div>
+          <div class="why-item scroll-reveal">
+            <h3>Long-term Relationships</h3>
+            <p>Long-term relationships matter more than short-term margins.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foundation Section -->
+    <section class="foundation">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">OUR FOUNDATION</div>
+          <h2 class="section-title">Built on Integrity</h2>
+        </div>
+        <div class="foundation-content">
+          <p class="foundation-text scroll-reveal">
+            Built on
+            <strong>integrity, stewardship, and accountability</strong>.
+          </p>
+          <p class="foundation-highlight scroll-reveal">
+            Divine Success is faith-backed in principle – committed to doing
+            what's right, operating honestly, and building trade that lasts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">ABOUT US</div>
+          <h2 class="section-title">Who We Are</h2>
+        </div>
+        <div class="about-content">
+          <p class="about-text scroll-reveal">
+            Divine Success is more than an import-export business. We're a
+            bridge between markets, connecting quality surplus goods from the UK
+            and Europe with communities that need them most. Our mission is to
+            create value through ethical trade, ensuring that goods find purpose
+            rather than waste.
+          </p>
+          <div class="about-values">
+            <div class="value-item scroll-reveal">
+              <h3>🎯 Our Mission</h3>
+              <p>
+                To facilitate responsible international trade that creates
+                opportunities and serves communities with integrity.
+              </p>
+            </div>
+            <div class="value-item scroll-reveal">
+              <h3>👁️ Our Vision</h3>
+              <p>
+                A world where global trade is transparent, sustainable, and
+                benefits everyone involved in the supply chain.
+              </p>
+            </div>
+            <div class="value-item scroll-reveal">
+              <h3>💎 Our Values</h3>
+              <p>
+                Integrity, accountability, stewardship, and a commitment to
+                building lasting partnerships based on trust.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">GET IN TOUCH</div>
+          <h2 class="section-title">Contact Us</h2>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item scroll-reveal">
+              <span>📧</span>
+              <a href="mailto:info@divinesuccess.co.uk"
+                >info@divinesuccess.co.uk</a
+              >
+            </div>
+            <div class="contact-item scroll-reveal">
+              <span>💬</span>
+              <a href="https://wa.me/44">WhatsApp: +44 ...</a>
+            </div>
+            <div class="contact-item scroll-reveal">
+              <span>🌍</span>
+              <span>UK ⟷ Africa | Global Trade Routes</span>
+            </div>
+          </div>
+
+          <div class="social-links scroll-reveal">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <span>f</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <span>📷</span>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <span>in</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <span>𝕏</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2026 Divine Success Import & Export. All rights reserved. | Built
+        on Integrity, Stewardship & Accountability
+      </p>
+    </footer>
+
+    <script>
+      // Navbar scroll effect
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Scroll reveal animations
+      const revealElements = document.querySelectorAll(".scroll-reveal");
+
+      const revealOnScroll = () => {
+        revealElements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementTop < windowHeight - 100) {
+            element.classList.add("revealed");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
