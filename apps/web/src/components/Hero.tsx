@@ -29,8 +29,8 @@ export default function Hero() {
             <span className="text-copper">Prices you can afford.</span>
           </h1>
           <p className="text-lg leading-relaxed text-ink-soft max-w-xl mb-10">
-            Shop quality UK used cars, electronics, appliances and more —
-            carefully checked, honestly priced, and delivered wherever you
+            Shop quality UK used cars, electronics, appliances, clothes and more
+            — carefully checked, honestly priced, and delivered wherever you
             are. Order a single item online, or buy in bulk for export.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -54,7 +54,7 @@ export default function Hero() {
         <Reveal className="relative">
           <div className="rounded-3xl overflow-hidden shadow-[0_24px_60px_rgba(43,36,32,0.18)] rotate-1">
             <Image
-              src="/images/cars.png"
+              src="/images/cars.avif"
               alt="Quality UK used cars ready for export"
               width={640}
               height={520}

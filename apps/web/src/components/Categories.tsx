@@ -6,7 +6,7 @@ const CATEGORIES = [
   {
     title: "Used Cars & Vehicles",
     desc: "Quality UK used cars, inspected and export-ready. Our biggest and most trusted category.",
-    image: "/images/cars.png",
+    image: "/images/cars.avif",
     feature: true,
     badge: "Our Speciality",
   },
@@ -23,16 +23,17 @@ const CATEGORIES = [
   {
     title: "Clothing & Textiles",
     desc: "Graded UK clothing in bales — quality sorted for resale.",
-    emoji: "👕",
+    image: "/images/sales.avif",
   },
   {
     title: "Furniture & Home",
     desc: "Quality used furniture and household items in mixed lots.",
-    emoji: "🛋️",
+    image: "/images/furniture.avif",
   },
   {
     title: "Mixed & Special Orders",
     desc: "Looking for something specific? Tell us — we will find it for you.",
+    image: "/images/mixed.avif",
     emoji: "📦",
   },
 ];
@@ -49,8 +50,8 @@ export default function Categories() {
             What We Sell
           </h2>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed">
-            Every item is quality-checked, fairly priced, and ready to go —
-            buy a single item online or order by the container.
+            Every item is quality-checked, fairly priced, and ready to go — buy
+            a single item online or order by the container.
           </p>
         </Reveal>
 

@@ -35,25 +35,24 @@ export default function About() {
           <Reveal className="space-y-5 text-lg leading-relaxed text-ink-soft">
             <p>
               <strong className="text-foreground">Founded in 2020</strong>,
-              Divine Success has been delivering quality products to people
-              who value <strong className="text-foreground">real affordability</strong> —
+              Divine Success has been delivering quality products to people who
+              value{" "}
+              <strong className="text-foreground">real affordability</strong> —
               proving that a fair price and genuine quality can go together.
             </p>
             <p>
-              We are a <strong className="text-foreground">UK-based company</strong> serving
-              customers online, worldwide. Our focus is simple: valuable
-              products, honestly described, at prices that respect your
-              money. Every item we sell — from a single laptop to a
-              container of vehicles — carries the same promise of quality
-              and value.
+              We are a{" "}
+              <strong className="text-foreground">UK-based company</strong>{" "}
+              serving customers online, worldwide. Our focus is simple: valuable
+              products, honestly described, at prices that respect your money.
+              Every item we sell — from a single laptop to a container of
+              vehicles — carries the same promise of quality and value.
             </p>
             <p>
               We are built on{" "}
               <strong className="text-foreground">
                 integrity, stewardship and accountability
               </strong>{" "}
-              — doing what is right, operating honestly, and building trade
-              relationships that last.
             </p>
           </Reveal>
 

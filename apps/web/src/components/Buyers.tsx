@@ -18,15 +18,15 @@ export default function Buyers() {
           <Reveal>
             <div className="h-full rounded-3xl border-2 border-copper bg-white p-10 shadow-[0_10px_40px_rgba(43,36,32,0.08)]">
               <span className="inline-block rounded-full bg-copper px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white mb-5">
-                Individual Buyers — Our First Focus
+                Individual Buyers
               </span>
               <h3 className="font-display font-semibold text-2xl sm:text-3xl text-foreground mb-4">
                 Order online, delivered to you
               </h3>
               <p className="text-ink-soft leading-relaxed mb-6">
-                You don&apos;t need to buy a container to get UK quality.
-                Order a single laptop, appliance, or item online and we will
-                deliver it to you — wherever you are in the world.
+                You don&apos;t need to buy a container to get UK quality. Order
+                a single laptop, appliance, or item online and we will deliver
+                it to you — wherever you are in the world.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
@@ -62,8 +62,8 @@ export default function Buyers() {
               </h3>
               <p className="text-white/80 leading-relaxed mb-6">
                 Resellers and traders worldwide — we supply vehicles,
-                electronics and mixed goods in bulk, professionally packed
-                with full export documentation.
+                electronics, cloths and mixed goods in bulk, professionally
+                packed with full export documentation.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
