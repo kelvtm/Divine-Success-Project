@@ -1,9 +1,21 @@
 import Logomark from "./Logomark";
 
 const SOCIALS = [
-  { label: "Facebook", href: "https://www.facebook.com/thedivinesucces/", icon: "f" },
-  { label: "Instagram", href: "https://www.instagram.com/_divinesuccess", icon: "📷" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/divine-success/", icon: "in" },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/thedivinesucces/",
+    icon: "f",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/_divinesuccess",
+    icon: "📷",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/divine-success/",
+    icon: "in",
+  },
   { label: "X", href: "https://x.com/_divinesuccess", icon: "𝕏" },
 ];
 
@@ -18,8 +30,8 @@ export default function Footer() {
           </div>
           <p className="leading-relaxed text-sm">
             Quality UK used goods — sold online worldwide, with bulk export
-            available for wholesalers. Affordable. Reliable. Built on
-            integrity, stewardship and accountability.
+            available for wholesalers. Affordable. Reliable. Built on integrity,
+            stewardship and accountability.
           </p>
           <div className="flex gap-3 mt-6">
             {SOCIALS.map((s) => (
@@ -42,11 +54,21 @@ export default function Footer() {
             Explore
           </h4>
           <div className="flex flex-col gap-2 text-sm">
-            <a href="#shop" className="hover:text-gold transition-colors">Shop Products</a>
-            <a href="#how" className="hover:text-gold transition-colors">How It Works</a>
-            <a href="#buyers" className="hover:text-gold transition-colors">Bulk &amp; Wholesale</a>
-            <a href="#about" className="hover:text-gold transition-colors">About Us</a>
-            <a href="#contact" className="hover:text-gold transition-colors">Contact</a>
+            <a href="#shop" className="hover:text-gold transition-colors">
+              Shop Products
+            </a>
+            <a href="#how" className="hover:text-gold transition-colors">
+              How It Works
+            </a>
+            <a href="#buyers" className="hover:text-gold transition-colors">
+              Bulk &amp; Wholesale
+            </a>
+            <a href="#about" className="hover:text-gold transition-colors">
+              About Us
+            </a>
+            <a href="#contact" className="hover:text-gold transition-colors">
+              Contact
+            </a>
           </div>
         </div>
 
@@ -73,8 +95,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto max-w-6xl border-t border-white/15 pt-6 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} Divine Success Ltd — Reg. No. 12467975.
-        All rights reserved.
+        © {new Date().getFullYear()} Divine Success Ltd All rights reserved.
       </div>
     </footer>
   );

@@ -5,7 +5,7 @@ import { EBAY_STORE_URL } from "@/lib/links";
 const CATEGORIES = [
   {
     title: "Used Cars & Vehicles",
-    desc: "Quality UK used cars, inspected and export-ready. Our biggest and most trusted category.",
+    desc: "Quality UK used cars, inspected and export-ready. Our biggest category.",
     image: "/images/cars.avif",
     feature: true,
     badge: "Our Speciality",
