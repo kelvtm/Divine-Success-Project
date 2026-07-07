@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { EBAY_STORE_URL } from "@/lib/links";
 
 export default function Hero() {
   return (
@@ -22,7 +23,7 @@ export default function Hero() {
             <span className="h-px w-8 bg-copper" />
             Quality UK Used Goods
           </div>
-          <h1 className="font-display font-semibold text-[2.75rem] sm:text-6xl lg:text-[3.75rem] leading-[1.05] tracking-tight text-foreground mb-6">
+          <h1 className="font-display font-bold text-[2.75rem] sm:text-6xl lg:text-[3.75rem] leading-[1.05] tracking-tight text-foreground mb-6">
             Quality you can trust.
             <br />
             <span className="text-copper">Prices you can afford.</span>
@@ -34,7 +35,9 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="#shop"
+              href={EBAY_STORE_URL}
+              target="_blank"
+              rel="noopener"
               className="inline-flex items-center rounded-xl bg-copper px-7 py-4 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(181,101,29,0.35)] hover:bg-copper-light transition-colors"
             >
               Shop Our Products

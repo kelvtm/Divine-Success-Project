@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { ShoppingBag, Workflow, Boxes, Info } from "lucide-react";
+import Logomark from "./Logomark";
 
 const LINKS = [
-  { href: "#shop", label: "Shop" },
-  { href: "#how", label: "How It Works" },
-  { href: "#buyers", label: "Bulk Orders" },
-  { href: "#about", label: "About" },
+  { href: "#shop", label: "Shop", icon: ShoppingBag },
+  { href: "#how", label: "How It Works", icon: Workflow },
+  { href: "#buyers", label: "Bulk Orders", icon: Boxes },
+  { href: "#about", label: "About", icon: Info },
 ];
 
 export default function Nav() {
@@ -14,24 +16,24 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 inset-x-0 z-50 px-4 pt-4">
-      <div
-        className="mx-auto max-w-6xl rounded-2xl border border-white/60 bg-white/55 backdrop-blur-xl shadow-[0_8px_32px_rgba(43,36,32,0.08)] supports-[backdrop-filter]:bg-white/40"
-      >
+      <div className="mx-auto max-w-6xl rounded-2xl border border-white/60 bg-white/55 backdrop-blur-xl shadow-[0_8px_32px_rgba(43,36,32,0.08)] supports-[backdrop-filter]:bg-white/40">
         <div className="flex items-center justify-between px-5 py-3.5">
           <a
             href="#home"
-            className="font-display font-semibold text-xl tracking-tight text-foreground"
+            className="flex items-center gap-2.5 font-display font-semibold text-xl tracking-tight text-copper"
           >
-            DIVINE <span className="text-copper">SUCCESS</span>
+            <Logomark size={30} />
+            DIVINE SUCCESS
           </a>
 
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-7">
             {LINKS.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="text-sm font-medium text-ink-soft hover:text-copper transition-colors"
+                  className="flex items-center gap-1.5 text-sm font-medium text-ink-soft hover:text-copper transition-colors"
                 >
+                  <l.icon size={16} strokeWidth={2} />
                   {l.label}
                 </a>
               </li>
@@ -62,8 +64,9 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-medium text-ink-soft hover:text-copper"
+                className="flex items-center gap-2.5 text-sm font-medium text-ink-soft hover:text-copper"
               >
+                <l.icon size={17} strokeWidth={2} />
                 {l.label}
               </a>
             ))}

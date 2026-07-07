@@ -1,3 +1,5 @@
+import Logomark from "./Logomark";
+
 const SOCIALS = [
   { label: "Facebook", href: "https://www.facebook.com/thedivinesucces/", icon: "f" },
   { label: "Instagram", href: "https://www.instagram.com/_divinesuccess", icon: "📷" },
@@ -10,8 +12,9 @@ export default function Footer() {
     <footer className="bg-foreground text-white/80 pt-16 pb-8 px-4 sm:px-6">
       <div className="mx-auto max-w-6xl grid gap-12 sm:grid-cols-3 mb-12">
         <div>
-          <div className="font-display font-semibold text-xl text-white mb-4">
-            DIVINE <span className="text-gold">SUCCESS</span>
+          <div className="flex items-center gap-2.5 font-display font-semibold text-xl text-white mb-4">
+            <Logomark size={28} />
+            DIVINE SUCCESS
           </div>
           <p className="leading-relaxed text-sm">
             Quality UK used goods — sold online worldwide, with bulk export

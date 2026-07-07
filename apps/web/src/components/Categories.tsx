@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
+import { EBAY_STORE_URL } from "@/lib/links";
 
 const CATEGORIES = [
   {
@@ -44,7 +45,7 @@ export default function Categories() {
           <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
             Shop &amp; Export
           </div>
-          <h2 className="font-display font-semibold text-4xl sm:text-5xl text-foreground">
+          <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
             What We Sell
           </h2>
           <p className="mt-4 text-lg text-ink-soft leading-relaxed">
@@ -114,6 +115,18 @@ export default function Categories() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal className="mt-12 flex justify-center">
+          <a
+            href={EBAY_STORE_URL}
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-2 rounded-xl bg-foreground px-7 py-4 text-sm font-semibold text-white hover:bg-foreground/85 transition-colors"
+          >
+            View Live Listings on eBay
+            <span aria-hidden>↗</span>
+          </a>
+        </Reveal>
       </div>
     </section>
   );

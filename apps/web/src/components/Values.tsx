@@ -27,7 +27,7 @@ export default function Values() {
           <div className="text-xs font-bold tracking-[0.2em] uppercase text-white/85 mb-3">
             Our Philosophy
           </div>
-          <h2 className="font-display font-semibold text-4xl sm:text-5xl text-white">
+          <h2 className="font-display font-bold text-4xl sm:text-5xl text-white">
             Why Divine Success
           </h2>
         </Reveal>

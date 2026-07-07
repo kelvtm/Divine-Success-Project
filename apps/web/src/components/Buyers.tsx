@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import { EBAY_STORE_URL } from "@/lib/links";
 
 export default function Buyers() {
   return (
@@ -8,7 +9,7 @@ export default function Buyers() {
           <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
             Who We Serve
           </div>
-          <h2 className="font-display font-semibold text-4xl sm:text-5xl text-foreground">
+          <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
             Buy Your Way
           </h2>
         </Reveal>
@@ -41,7 +42,9 @@ export default function Buyers() {
                 ))}
               </ul>
               <a
-                href="#contact"
+                href={EBAY_STORE_URL}
+                target="_blank"
+                rel="noopener"
                 className="inline-flex items-center rounded-xl bg-copper px-6 py-3.5 text-sm font-semibold text-white hover:bg-copper-light transition-colors"
               >
                 Start Shopping

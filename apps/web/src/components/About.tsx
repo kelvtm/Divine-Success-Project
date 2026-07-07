@@ -26,7 +26,7 @@ export default function About() {
           <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
             About Us
           </div>
-          <h2 className="font-display font-semibold text-4xl sm:text-5xl text-foreground">
+          <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
             Who We Are
           </h2>
         </Reveal>

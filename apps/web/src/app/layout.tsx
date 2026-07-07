@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["600", "700", "800"],
 });
 
 const inter = Inter({
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
+      className={`${bricolage.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         {children}

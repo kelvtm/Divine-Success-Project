@@ -26,7 +26,7 @@ export default function HowItWorks() {
           <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
             Simple Process
           </div>
-          <h2 className="font-display font-semibold text-4xl sm:text-5xl text-foreground">
+          <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
             How It Works
           </h2>
         </Reveal>

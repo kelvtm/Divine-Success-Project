@@ -22,7 +22,7 @@ export default function EnquiryForm() {
           <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
             Get In Touch
           </div>
-          <h2 className="font-display font-semibold text-4xl sm:text-5xl text-foreground">
+          <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
             Order or Enquire
           </h2>
         </Reveal>
