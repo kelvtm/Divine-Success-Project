@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { ShoppingBag, Workflow, Boxes, Info } from "lucide-react";
+import { Recycle, Workflow, Users, Info } from "lucide-react";
 import Logomark from "./Logomark";
 
 const LINKS = [
-  { href: "#shop", label: "Shop", icon: ShoppingBag },
+  { href: "#services", label: "Services", icon: Recycle },
   { href: "#how", label: "How It Works", icon: Workflow },
-  { href: "#buyers", label: "Bulk Orders", icon: Boxes },
+  { href: "#who", label: "Who We Help", icon: Users },
   { href: "#about", label: "About", icon: Info },
 ];
 
@@ -44,7 +44,7 @@ export default function Nav() {
             href="#contact"
             className="hidden md:inline-flex items-center rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-copper-light transition-colors"
           >
-            Get In Touch
+            Get a Free Quote
           </a>
 
           <button
@@ -75,7 +75,7 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               className="inline-flex items-center justify-center rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-white"
             >
-              Get In Touch
+              Get a Free Quote
             </a>
           </div>
         )}

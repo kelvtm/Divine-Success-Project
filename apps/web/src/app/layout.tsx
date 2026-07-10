@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Divine Success | Quality UK Used Goods — Shop Online Worldwide",
+  title: "Divine Success | House, Office & Warehouse Clearance — London to Bristol",
   description:
-    "Shop quality UK used cars, electronics, appliances and more. Affordable, honestly priced, delivered worldwide — with bulk export for wholesalers.",
+    "Licensed house, office and warehouse clearance plus waste management across the M4 corridor. Reuse and recycling first, landfill last. Free fixed quotes.",
 };
 
 export default function RootLayout({

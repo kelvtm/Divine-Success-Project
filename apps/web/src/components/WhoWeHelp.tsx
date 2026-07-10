@@ -1,16 +1,15 @@
 import Reveal from "./Reveal";
-import { EBAY_STORE_URL } from "@/lib/links";
 
-export default function Buyers() {
+export default function WhoWeHelp() {
   return (
-    <section id="buyers" className="py-24 px-4 sm:px-6 bg-surface">
+    <section id="who" className="py-24 px-4 sm:px-6 bg-surface">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl mx-auto text-center mb-14">
           <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
-            Who We Serve
+            Who We Help
           </div>
           <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
-            Buy Your Way
+            Homes &amp; Businesses
           </h2>
         </Reveal>
 
@@ -18,21 +17,21 @@ export default function Buyers() {
           <Reveal>
             <div className="h-full rounded-3xl border-2 border-copper bg-white p-10 shadow-[0_10px_40px_rgba(43,36,32,0.08)]">
               <span className="inline-block rounded-full bg-copper px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white mb-5">
-                Individual Buyers
+                Homes &amp; Families
               </span>
               <h3 className="font-display font-semibold text-2xl sm:text-3xl text-foreground mb-4">
-                Order online, delivered to you
+                House clearances, handled with care
               </h3>
               <p className="text-ink-soft leading-relaxed mb-6">
-                You don&apos;t need to buy a container to get UK quality. Order
-                a single laptop, appliance, or item online and we will deliver
-                it to you — wherever you are in the world.
+                From a single room to a whole property — moves, downsizing, end
+                of tenancy and probate clearances handled sensitively, at a
+                pace that suits you.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Shop individual items at honest prices",
-                  "Every product checked and described truthfully",
-                  "Worldwide delivery, tracked to your door",
+                  "Free fixed quotes from photos — no visit needed",
+                  "Probate and bereavement clearances handled discreetly",
+                  "Usable items donated or rehomed, not dumped",
                   "Real support on WhatsApp — talk to a person, not a bot",
                 ].map((item) => (
                   <li key={item} className="flex gap-3 text-ink-soft">
@@ -42,12 +41,10 @@ export default function Buyers() {
                 ))}
               </ul>
               <a
-                href={EBAY_STORE_URL}
-                target="_blank"
-                rel="noopener"
+                href="#contact"
                 className="inline-flex items-center rounded-xl bg-copper px-6 py-3.5 text-sm font-semibold text-white hover:bg-copper-light transition-colors"
               >
-                Start Shopping
+                Get a Free Quote
               </a>
             </div>
           </Reveal>
@@ -55,22 +52,22 @@ export default function Buyers() {
           <Reveal>
             <div className="h-full rounded-3xl bg-foreground p-10 text-white">
               <span className="inline-block rounded-full bg-gold px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-foreground mb-5">
-                Bulk Buyers &amp; Wholesalers
+                Businesses
               </span>
               <h3 className="font-display font-semibold text-2xl sm:text-3xl mb-4">
-                Export by the container
+                Offices &amp; warehouses, cleared without downtime
               </h3>
               <p className="text-white/80 leading-relaxed mb-6">
-                Resellers and traders worldwide — we supply vehicles,
-                electronics, cloths and mixed goods in bulk, professionally
-                packed with full export documentation.
+                Offices, warehouses and retail units cleared around your
+                schedule — evenings and weekends included — with the paperwork
+                your business needs.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Container and pallet quantities",
-                  "Commercial invoice & packing list included",
-                  "Deposit-and-balance payment terms",
-                  "Long-term supply partnerships welcome",
+                  "Out-of-hours clearances to avoid disruption",
+                  "Compliant WEEE disposal for IT and electricals",
+                  "Waste transfer documentation provided",
+                  "One-off jobs or ongoing waste contracts",
                 ].map((item) => (
                   <li key={item} className="flex gap-3 text-white/85">
                     <span className="text-gold font-bold">✓</span>
@@ -82,7 +79,7 @@ export default function Buyers() {
                 href="#contact"
                 className="inline-flex items-center rounded-xl bg-gold px-6 py-3.5 text-sm font-semibold text-foreground hover:brightness-95 transition"
               >
-                Request Bulk Quote
+                Talk To Us
               </a>
             </div>
           </Reveal>

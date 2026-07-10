@@ -2,19 +2,19 @@ import Reveal from "./Reveal";
 
 const FACTS = [
   {
-    icon: "✅",
-    title: "Checked Before It Ships",
-    desc: "Every item is inspected and honestly described before it reaches you.",
+    icon: "🤝",
+    title: "Community First",
+    desc: "Usable items are donated or rehomed locally before recycling is even considered.",
   },
   {
-    icon: "💎",
-    title: "Value For Money",
-    desc: "Affordability and quality are not opposites. We check every item so you get the best of both.",
+    icon: "♻️",
+    title: "Licensed & Documented",
+    desc: "Registered waste carrier — you get proof of responsible disposal with every job.",
   },
   {
-    icon: "🌍",
-    title: "Shipped Worldwide",
-    desc: "Order online from anywhere. Bulk export available for wholesalers and resellers.",
+    icon: "💷",
+    title: "Honest Fixed Quotes",
+    desc: "The price we quote is the price you pay — and resale value works in your favour.",
   },
 ];
 
@@ -35,24 +35,27 @@ export default function About() {
           <Reveal className="space-y-5 text-lg leading-relaxed text-ink-soft">
             <p>
               <strong className="text-foreground">Founded in 2020</strong>,
-              Divine Success has been delivering quality products to people who
-              value{" "}
-              <strong className="text-foreground">real affordability</strong> —
-              proving that a fair price and genuine quality can go together.
+              Divine Success is a UK family-run firm built on a simple belief:{" "}
+              <strong className="text-foreground">
+                nothing good should go to waste
+              </strong>
+              .
             </p>
             <p>
-              We are a{" "}
-              <strong className="text-foreground">UK-based company</strong>{" "}
-              serving customers online, worldwide. Our focus is simple: valuable
-              products, honestly described, at prices that respect your money.
-              Every item we sell — from a single laptop to a container of
-              vehicles — carries the same promise of quality and value.
+              We clear houses, offices and warehouses across the{" "}
+              <strong className="text-foreground">
+                M4 corridor — London to Bristol
+              </strong>
+              . What we clear doesn&apos;t head straight for landfill: usable
+              items are donated or rehomed in the community, materials are
+              recycled, and anything with resale value brings your quote down.
             </p>
             <p>
               We are built on{" "}
               <strong className="text-foreground">
                 integrity, stewardship and accountability
               </strong>{" "}
+              — clearance with a conscience.
             </p>
           </Reveal>
 

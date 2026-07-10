@@ -1,9 +1,9 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
-import Categories from "@/components/Categories";
+import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
-import Buyers from "@/components/Buyers";
+import WhoWeHelp from "@/components/WhoWeHelp";
 import About from "@/components/About";
 import Values from "@/components/Values";
 import EnquiryForm from "@/components/EnquiryForm";
@@ -17,9 +17,9 @@ export default function Home() {
       <main>
         <Hero />
         <TrustStrip />
-        <Categories />
+        <Services />
         <HowItWorks />
-        <Buyers />
+        <WhoWeHelp />
         <About />
         <Values />
         <EnquiryForm />

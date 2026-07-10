@@ -2,20 +2,20 @@ import Reveal from "./Reveal";
 
 const VALUES = [
   {
-    title: "Quality First",
-    desc: "Goods should be used, not wasted — and used should never mean unreliable. We check everything we sell.",
+    title: "Community First",
+    desc: "What we clear goes back into the community — donated, rehomed, given a second life.",
+  },
+  {
+    title: "Nothing Wasted",
+    desc: "Reuse first, recycle next, landfill last. We sort every load so as little as possible is thrown away.",
   },
   {
     title: "Honest Prices",
-    desc: "Not every buyer can afford new. Trade should still be done right — fair prices, no surprises.",
-  },
-  {
-    title: "People First",
-    desc: "Trade should serve people, not pressure them. Talk to us — real people answer.",
+    desc: "Fixed quotes, no hidden extras. If your items have resale value, your price comes down.",
   },
   {
     title: "Built To Last",
-    desc: "Long-term relationships matter more than short-term margins. Most of our buyers come back.",
+    desc: "Long-term relationships matter more than short-term margins. Most of our work comes from recommendations.",
   },
 ];
 

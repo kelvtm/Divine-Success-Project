@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
-import { EBAY_STORE_URL } from "@/lib/links";
 
 export default function Hero() {
   return (
@@ -21,32 +20,31 @@ export default function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-copper mb-6">
             <span className="h-px w-8 bg-copper" />
-            Quality UK Used Goods
+            Clearance &amp; Waste Management
           </div>
           <h1 className="font-display font-bold text-[2.75rem] sm:text-6xl lg:text-[3.75rem] leading-[1.05] tracking-tight text-foreground mb-6">
-            Quality you can trust.
+            Cleared with care.
             <br />
-            <span className="text-copper">Prices you can afford.</span>
+            <span className="text-copper">Nothing good goes to waste.</span>
           </h1>
           <p className="text-lg leading-relaxed text-ink-soft max-w-xl mb-10">
-            Shop quality UK used cars, electronics, appliances, clothes and more
-            — carefully checked, honestly priced, and delivered wherever you
-            are. Order a single item online, or buy in bulk for export.
+            House, office and warehouse clearance across the M4 corridor —
+            London to Bristol. Usable items are donated or rehomed in the
+            community, the rest responsibly recycled — and anything with resale
+            value can bring your quote down.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href={EBAY_STORE_URL}
-              target="_blank"
-              rel="noopener"
+              href="#contact"
               className="inline-flex items-center rounded-xl bg-copper px-7 py-4 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(181,101,29,0.35)] hover:bg-copper-light transition-colors"
             >
-              Shop Our Products
+              Get a Free Quote
             </a>
             <a
-              href="#buyers"
+              href="#services"
               className="inline-flex items-center rounded-xl border-2 border-foreground/15 px-7 py-4 text-sm font-semibold text-foreground hover:border-copper hover:text-copper transition-colors"
             >
-              Bulk &amp; Wholesale
+              Our Services
             </a>
           </div>
         </div>
@@ -54,8 +52,8 @@ export default function Hero() {
         <Reveal className="relative">
           <div className="rounded-3xl overflow-hidden shadow-[0_24px_60px_rgba(43,36,32,0.18)] rotate-1">
             <Image
-              src="/images/cars.avif"
-              alt="Quality UK used cars ready for export"
+              src="/images/furniture.avif"
+              alt="Property being cleared with furniture sorted for reuse"
               width={640}
               height={520}
               priority
@@ -65,7 +63,7 @@ export default function Hero() {
           <div className="absolute -bottom-5 -left-5 flex items-center gap-3 rounded-2xl border border-line bg-white/80 backdrop-blur-md px-5 py-4 shadow-[0_10px_30px_rgba(43,36,32,0.12)]">
             <span className="h-2.5 w-2.5 rounded-full bg-gold" />
             <span className="text-sm font-semibold text-foreground">
-              Shipped Worldwide
+              Licensed Waste Carrier
             </span>
           </div>
         </Reveal>

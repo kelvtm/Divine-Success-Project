@@ -29,8 +29,8 @@ export default function Footer() {
             DIVINE SUCCESS
           </div>
           <p className="leading-relaxed text-sm">
-            Quality UK used goods — sold online worldwide, with bulk export
-            available for wholesalers. Affordable. Reliable. Built on integrity,
+            House, office and warehouse clearance across the M4 corridor — reuse
+            first, landfill last. Family-run, licensed and built on integrity,
             stewardship and accountability.
           </p>
           <div className="flex gap-3 mt-6">
@@ -54,20 +54,20 @@ export default function Footer() {
             Explore
           </h4>
           <div className="flex flex-col gap-2 text-sm">
-            <a href="#shop" className="hover:text-gold transition-colors">
-              Shop Products
+            <a href="#services" className="hover:text-gold transition-colors">
+              Our Services
             </a>
             <a href="#how" className="hover:text-gold transition-colors">
               How It Works
             </a>
-            <a href="#buyers" className="hover:text-gold transition-colors">
-              Bulk &amp; Wholesale
+            <a href="#who" className="hover:text-gold transition-colors">
+              Who We Help
             </a>
             <a href="#about" className="hover:text-gold transition-colors">
               About Us
             </a>
             <a href="#contact" className="hover:text-gold transition-colors">
-              Contact
+              Get a Quote
             </a>
           </div>
         </div>
@@ -80,6 +80,8 @@ export default function Footer() {
             Divine Success Ltd
             <br />
             Reg. No. 12467975
+            <br />
+            Waste Carrier Reg. No. CBDU647280
             <br />
             25 Shaftesbury Centre, Percy Street
             <br />

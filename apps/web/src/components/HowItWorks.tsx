@@ -3,18 +3,18 @@ import Reveal from "./Reveal";
 const STEPS = [
   {
     num: "01",
-    title: "Browse & Choose",
-    desc: "Explore our products online or message us on WhatsApp with what you're looking for. We respond fast with photos, condition details and honest prices.",
+    title: "Send Photos, Get a Price",
+    desc: "WhatsApp us photos and a rough description of what needs clearing. You get a fixed, free quote back fast — no hidden extras, no obligation.",
   },
   {
     num: "02",
-    title: "Order & Pay Securely",
-    desc: "Place your order online or through our team. Individual items ship on payment; bulk orders confirm with a deposit and balance before shipping.",
+    title: "We Clear It",
+    desc: "We arrive on time, clear everything as agreed — houses, offices or warehouses — and leave the space tidy and ready for what's next.",
   },
   {
     num: "03",
-    title: "We Deliver",
-    desc: "Single items are posted to you worldwide. Bulk and vehicle orders are professionally packed, documented and shipped to your destination.",
+    title: "Nothing Good Goes to Waste",
+    desc: "Usable items are donated or rehomed in the community, the rest recycled. Resale value offsets your price, and you get proof of responsible disposal.",
   },
 ];
 

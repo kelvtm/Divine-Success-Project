@@ -23,19 +23,19 @@ export default function EnquiryForm() {
             Get In Touch
           </div>
           <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
-            Order or Enquire
+            Get Your Free Quote
           </h2>
         </Reveal>
 
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] items-start">
           <Reveal>
             <h3 className="font-display font-semibold text-2xl text-foreground mb-4">
-              Tell us what you need
+              Tell us what needs clearing
             </h3>
             <p className="text-ink-soft leading-relaxed mb-6">
-              Whether it&apos;s one item delivered to your door or a
-              container of goods — send us the details and we will come back
-              to you fast with availability, photos and pricing.
+              Send us the details — or photos on WhatsApp for the fastest
+              quote — and we&apos;ll come back with a fixed, no-obligation
+              price.
             </p>
             <div className="space-y-3">
               <a
@@ -51,7 +51,7 @@ export default function EnquiryForm() {
                 💬 WhatsApp: +44 7575 342732
               </a>
               <div className="flex items-center gap-3 text-ink-soft">
-                📍 UK-Based — Shipping Worldwide
+                📍 Covering the M4 corridor — London to Bristol
               </div>
             </div>
           </Reveal>
@@ -86,49 +86,42 @@ export default function EnquiryForm() {
                   <input
                     name="phone"
                     type="tel"
-                    placeholder="+234..."
+                    placeholder="+44..."
                     className="field-input"
                   />
                 </Field>
-                <Field label="Country *">
+                <Field label="Postcode / Town *">
                   <input
-                    name="country"
+                    name="location"
                     type="text"
                     required
-                    placeholder="e.g. Nigeria"
+                    placeholder="e.g. SN2 or Swindon"
                     className="field-input"
                   />
                 </Field>
               </div>
               <div className="grid gap-5 sm:grid-cols-2 mt-5">
-                <Field label="I want to *">
-                  <select name="buyerType" required className="field-input">
+                <Field label="Service Needed *">
+                  <select name="service" required className="field-input">
                     <option value="">Select one…</option>
-                    <option value="individual">Buy an item for myself</option>
-                    <option value="bulk">Order in bulk / wholesale</option>
-                    <option value="vehicle">Buy or import a vehicle</option>
+                    <option value="house">House Clearance</option>
+                    <option value="office">Office Clearance</option>
+                    <option value="warehouse">Warehouse Clearance</option>
+                    <option value="waste">Waste Management</option>
                     <option value="other">Something else</option>
                   </select>
                 </Field>
-                <Field label="Product Category">
-                  <select name="category" className="field-input">
-                    <option value="">Select…</option>
-                    <option>Cars &amp; Vehicles</option>
-                    <option>Laptops &amp; Electronics</option>
-                    <option>Home Appliances</option>
-                    <option>Clothing &amp; Textiles</option>
-                    <option>Furniture &amp; Home</option>
-                    <option>Mixed / Other</option>
-                  </select>
+                <Field label="Preferred Date">
+                  <input name="date" type="date" className="field-input" />
                 </Field>
               </div>
               <div className="mt-5">
-                <Field label="What are you looking for? *">
+                <Field label="What needs clearing? *">
                   <textarea
                     name="message"
                     rows={4}
                     required
-                    placeholder="Tell us the item, quantity, and anything else we should know…"
+                    placeholder="Tell us the property or space, roughly how much there is, and any access details…"
                     className="field-input"
                   />
                 </Field>
@@ -137,7 +130,7 @@ export default function EnquiryForm() {
                 type="submit"
                 className="mt-2 w-full rounded-xl bg-copper py-4 text-sm font-semibold text-white hover:bg-copper-light transition-colors"
               >
-                Send Enquiry
+                Get My Free Quote
               </button>
               <p className="mt-4 text-xs text-ink-soft leading-relaxed">
                 By sending, you agree we may contact you about your enquiry.
@@ -146,7 +139,7 @@ export default function EnquiryForm() {
               {submitted && (
                 <div className="mt-4 rounded-xl border border-green-300 bg-green-50 px-4 py-3 text-sm font-semibold text-green-800">
                   ✅ Thank you! Your enquiry has been received — we will get
-                  back to you shortly.
+                  back to you shortly with your quote.
                 </div>
               )}
             </form>

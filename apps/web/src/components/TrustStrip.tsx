@@ -1,8 +1,8 @@
 const ITEMS = [
-  { title: "Since 2020", sub: "Trusted online seller" },
-  { title: "Ships Worldwide", sub: "Order online, anywhere" },
-  { title: "Every Item Checked", sub: "Honest condition reports" },
-  { title: "Bulk Export Available", sub: "Container & pallet orders" },
+  { title: "Since 2020", sub: "UK family-run firm" },
+  { title: "Licensed Waste Carrier", sub: "Reg. No. [PENDING]" },
+  { title: "Reuse First", sub: "Donate & recycle — landfill last" },
+  { title: "Free Quotes", sub: "Fixed price, no surprises" },
 ];
 
 export default function TrustStrip() {
