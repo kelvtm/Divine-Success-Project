@@ -1,28 +1,41 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 
-const SERVICES = [
+type Service = {
+  title: string;
+  desc: string;
+  image: string;
+  imageAlt: string;
+  feature?: boolean;
+  badge?: string;
+};
+
+const SERVICES: Service[] = [
   {
     title: "House Clearance",
     desc: "Full or part clearances for moves, downsizing, probate and end of tenancy — handled respectfully, cleared in one visit wherever possible.",
-    image: "/images/furniture.avif",
+    image: "/images/house-clearance.jpg",
+    imageAlt: "Clothes being sorted into donation boxes during a house clearance",
     feature: true,
     badge: "Most Requested",
   },
   {
     title: "Office Clearance",
     desc: "Desks, chairs, IT and fittings cleared — out of hours if needed, with compliant WEEE disposal so your business stays covered.",
-    image: "/images/electronics.png",
+    image: "/images/office-clearance.jpg",
+    imageAlt: "Office space being packed up with boxes on a desk",
   },
   {
     title: "Warehouse Clearance",
     desc: "Racking, pallets, redundant stock and equipment. Big spaces, proper manpower, fast turnaround.",
-    image: "/images/mixed.avif",
+    image: "/images/warehouse-clearance.jpg",
+    imageAlt: "Warehouse yard with stacked pallets and metal containers awaiting clearance",
   },
   {
     title: "Waste Management",
     desc: "One-off or ongoing waste removal, sorted on collection for reuse, recycling and responsible disposal — with documentation.",
-    image: "/images/appliances.png",
+    image: "/images/waste-management.jpg",
+    imageAlt: "Boxes labelled reuse, recycle and repeat against a green background",
   },
 ];
 
@@ -57,7 +70,7 @@ export default function Services() {
                 >
                   <Image
                     src={svc.image}
-                    alt={svc.title}
+                    alt={svc.imageAlt}
                     fill
                     sizes={
                       svc.feature

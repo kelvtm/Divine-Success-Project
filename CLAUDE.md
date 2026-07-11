@@ -65,7 +65,7 @@ Content / brand facts (use these exactly)
 * Company: Divine Success Ltd, Reg. No. 12467975.
 * Waste Carrier Reg. No.: CBDU647280 (show in trust strip + footer).
 * Registered address: 25 Shaftesbury Centre, Percy Street, Swindon, England, SN2 2AZ (registered office only — brand is "UK-based, covering the M4 corridor", do NOT centre the brand on Swindon).
-* Email: info@divine-success.com · Website: divine-success.com
+* Email: info@divinesuccess.co.uk · Website: divinesuccess.co.uk
 * WhatsApp: +44 7575 342732 (floating button, sticky).
 * LinkedIn: https://www.linkedin.com/company/divine-success/ · Facebook: /thedivinesucces/ · IG: /_divinesuccess · X: /_divinesuccess
 * Positioning: community first, nothing wasted, honest fixed prices, integrity/stewardship/accountability. Founded 2020.

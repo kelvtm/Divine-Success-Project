@@ -88,10 +88,10 @@ export default function Footer() {
             Swindon, England, SN2 2AZ
           </p>
           <a
-            href="mailto:info@divine-success.com"
+            href="mailto:info@divinesuccess.co.uk"
             className="inline-block mt-3 text-sm hover:text-accent transition-colors"
           >
-            info@divine-success.com
+            info@divinesuccess.co.uk
           </a>
         </div>
       </div>

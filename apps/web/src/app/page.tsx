@@ -17,8 +17,8 @@ const LOCAL_BUSINESS_SCHEMA = {
   name: "Divine Success Ltd",
   description:
     "House, office and warehouse clearance plus waste management across the M4 corridor — London to Bristol. Licensed waste carrier. Reuse and recycling first, landfill last.",
-  url: "https://divine-success.com",
-  email: "info@divine-success.com",
+  url: "https://divinesuccess.co.uk",
+  email: "info@divinesuccess.co.uk",
   telephone: "+447575342732",
   foundingDate: "2020",
   address: {

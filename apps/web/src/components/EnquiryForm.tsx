@@ -39,10 +39,10 @@ export default function EnquiryForm() {
             </p>
             <div className="space-y-3">
               <a
-                href="mailto:info@divine-success.com"
+                href="mailto:info@divinesuccess.co.uk"
                 className="flex items-center gap-3 text-ink-soft hover:text-primary transition-colors"
               >
-                📧 info@divine-success.com
+                📧 info@divinesuccess.co.uk
               </a>
               <a
                 href="https://wa.me/447575342732"

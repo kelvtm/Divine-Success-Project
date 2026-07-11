@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative pt-40 pb-20 px-4 sm:px-6 overflow-hidden"
+      className="relative pt-28 sm:pt-32 pb-20 px-4 sm:px-6 overflow-hidden"
     >
       <div
         aria-hidden
@@ -18,8 +18,8 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-6xl grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
         <div>
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6">
-            <span className="h-px w-8 bg-primary" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-accent-soft px-4 py-2 text-xs font-bold tracking-[0.18em] uppercase text-primary mb-6">
+            <span className="h-2 w-2 rounded-full bg-primary" />
             Clearance &amp; Waste Management
           </div>
           <h1 className="font-display font-bold text-[2.75rem] sm:text-6xl lg:text-[3.75rem] leading-[1.05] tracking-tight text-foreground mb-6">
@@ -52,8 +52,8 @@ export default function Hero() {
         <Reveal className="relative">
           <div className="rounded-3xl overflow-hidden shadow-[0_24px_60px_rgba(18,43,32,0.18)] rotate-1">
             <Image
-              src="/images/furniture.avif"
-              alt="Property being cleared with furniture sorted for reuse"
+              src="/images/hero-team.jpg"
+              alt="Clearance crew loading boxed and wrapped items into a van"
               width={640}
               height={520}
               priority

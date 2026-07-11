@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 const FACTS = [
@@ -57,6 +58,15 @@ export default function About() {
               </strong>{" "}
               — clearance with a conscience.
             </p>
+            <div className="rounded-3xl overflow-hidden shadow-[0_18px_48px_rgba(18,43,32,0.12)]">
+              <Image
+                src="/images/community-recycle.jpg"
+                alt="Aerial view of woodland with a pond shaped like a recycling symbol"
+                width={640}
+                height={420}
+                className="w-full h-64 object-cover"
+              />
+            </div>
           </Reveal>
 
           <Reveal className="grid gap-4">
