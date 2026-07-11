@@ -16,11 +16,11 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 inset-x-0 z-50 px-4 pt-4">
-      <div className="mx-auto max-w-6xl rounded-2xl border border-white/60 bg-white/55 backdrop-blur-xl shadow-[0_8px_32px_rgba(43,36,32,0.08)] supports-[backdrop-filter]:bg-white/40">
+      <div className="mx-auto max-w-6xl rounded-2xl border border-white/60 bg-white/55 backdrop-blur-xl shadow-[0_8px_32px_rgba(18,43,32,0.08)] supports-[backdrop-filter]:bg-white/40">
         <div className="flex items-center justify-between px-5 py-3.5">
           <a
             href="#home"
-            className="flex items-center gap-2.5 font-display font-semibold text-xl tracking-tight text-copper"
+            className="flex items-center gap-2.5 font-display font-semibold text-xl tracking-tight text-primary"
           >
             <Logomark size={30} />
             DIVINE SUCCESS
@@ -31,7 +31,7 @@ export default function Nav() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="flex items-center gap-1.5 text-sm font-medium text-ink-soft hover:text-copper transition-colors"
+                  className="flex items-center gap-1.5 text-sm font-medium text-ink-soft hover:text-primary transition-colors"
                 >
                   <l.icon size={16} strokeWidth={2} />
                   {l.label}
@@ -42,7 +42,7 @@ export default function Nav() {
 
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-copper-light transition-colors"
+            className="hidden md:inline-flex items-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-light transition-colors"
           >
             Get a Free Quote
           </a>
@@ -64,7 +64,7 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="flex items-center gap-2.5 text-sm font-medium text-ink-soft hover:text-copper"
+                className="flex items-center gap-2.5 text-sm font-medium text-ink-soft hover:text-primary"
               >
                 <l.icon size={17} strokeWidth={2} />
                 {l.label}
@@ -73,7 +73,7 @@ export default function Nav() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-white"
+              className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white"
             >
               Get a Free Quote
             </a>

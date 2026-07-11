@@ -41,7 +41,7 @@ export default function Footer() {
                 aria-label={s.label}
                 target="_blank"
                 rel="noopener"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 font-bold text-white hover:bg-copper transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 font-bold text-white hover:bg-primary transition-colors"
               >
                 {s.icon}
               </a>
@@ -54,19 +54,19 @@ export default function Footer() {
             Explore
           </h4>
           <div className="flex flex-col gap-2 text-sm">
-            <a href="#services" className="hover:text-gold transition-colors">
+            <a href="#services" className="hover:text-accent transition-colors">
               Our Services
             </a>
-            <a href="#how" className="hover:text-gold transition-colors">
+            <a href="#how" className="hover:text-accent transition-colors">
               How It Works
             </a>
-            <a href="#who" className="hover:text-gold transition-colors">
+            <a href="#who" className="hover:text-accent transition-colors">
               Who We Help
             </a>
-            <a href="#about" className="hover:text-gold transition-colors">
+            <a href="#about" className="hover:text-accent transition-colors">
               About Us
             </a>
-            <a href="#contact" className="hover:text-gold transition-colors">
+            <a href="#contact" className="hover:text-accent transition-colors">
               Get a Quote
             </a>
           </div>
@@ -89,7 +89,7 @@ export default function Footer() {
           </p>
           <a
             href="mailto:info@divine-success.com"
-            className="inline-block mt-3 text-sm hover:text-gold transition-colors"
+            className="inline-block mt-3 text-sm hover:text-accent transition-colors"
           >
             info@divine-success.com
           </a>

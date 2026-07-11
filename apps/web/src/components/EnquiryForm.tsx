@@ -19,7 +19,7 @@ export default function EnquiryForm() {
     <section id="contact" className="py-24 px-4 sm:px-6 bg-surface">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl mx-auto text-center mb-14">
-          <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
+          <div className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-3">
             Get In Touch
           </div>
           <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
@@ -40,13 +40,13 @@ export default function EnquiryForm() {
             <div className="space-y-3">
               <a
                 href="mailto:info@divine-success.com"
-                className="flex items-center gap-3 text-ink-soft hover:text-copper transition-colors"
+                className="flex items-center gap-3 text-ink-soft hover:text-primary transition-colors"
               >
                 📧 info@divine-success.com
               </a>
               <a
                 href="https://wa.me/447575342732"
-                className="flex items-center gap-3 text-ink-soft hover:text-copper transition-colors"
+                className="flex items-center gap-3 text-ink-soft hover:text-primary transition-colors"
               >
                 💬 WhatsApp: +44 7575 342732
               </a>
@@ -59,7 +59,7 @@ export default function EnquiryForm() {
           <Reveal>
             <form
               onSubmit={handleSubmit}
-              className="rounded-3xl border border-line bg-white p-8 shadow-[0_10px_40px_rgba(43,36,32,0.08)]"
+              className="rounded-3xl border border-line bg-white p-8 shadow-[0_10px_40px_rgba(18,43,32,0.08)]"
             >
               <div className="grid gap-5 sm:grid-cols-2">
                 <Field label="Full Name *">
@@ -128,7 +128,7 @@ export default function EnquiryForm() {
               </div>
               <button
                 type="submit"
-                className="mt-2 w-full rounded-xl bg-copper py-4 text-sm font-semibold text-white hover:bg-copper-light transition-colors"
+                className="mt-2 w-full rounded-xl bg-primary py-4 text-sm font-semibold text-white hover:bg-primary-light transition-colors"
               >
                 Get My Free Quote
               </button>

@@ -1,6 +1,6 @@
 const ITEMS = [
   { title: "Since 2020", sub: "UK family-run firm" },
-  { title: "Licensed Waste Carrier", sub: "Reg. No. [PENDING]" },
+  { title: "Licensed Waste Carrier", sub: "Reg. No. CBDU647280" },
   { title: "Reuse First", sub: "Donate & recycle — landfill last" },
   { title: "Free Quotes", sub: "Fixed price, no surprises" },
 ];

@@ -23,7 +23,7 @@ export default function HowItWorks() {
     <section id="how" className="py-24 px-4 sm:px-6 bg-white">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl mx-auto text-center mb-14">
-          <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
+          <div className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-3">
             Simple Process
           </div>
           <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
@@ -35,7 +35,7 @@ export default function HowItWorks() {
           {STEPS.map((step) => (
             <Reveal key={step.num}>
               <div className="h-full rounded-3xl border border-line bg-surface p-9">
-                <div className="font-display font-semibold text-4xl text-gold mb-4">
+                <div className="font-display font-semibold text-4xl text-accent mb-4">
                   {step.num}
                 </div>
                 <h3 className="font-display font-semibold text-xl text-foreground mb-2">

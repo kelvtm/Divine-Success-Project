@@ -31,7 +31,7 @@ export default function Services() {
     <section id="services" className="py-24 px-4 sm:px-6 bg-surface">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl mx-auto text-center mb-14">
-          <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
+          <div className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-3">
             What We Do
           </div>
           <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
@@ -50,10 +50,10 @@ export default function Services() {
               className={svc.feature ? "sm:col-span-2 lg:col-span-3" : undefined}
             >
               <div
-                className={`group h-full rounded-3xl border border-line bg-white overflow-hidden transition-all hover:-translate-y-1.5 hover:shadow-[0_18px_48px_rgba(43,36,32,0.14)] ${svc.feature ? "relative" : ""}`}
+                className={`group h-full rounded-3xl border border-line bg-white overflow-hidden transition-all hover:-translate-y-1.5 hover:shadow-[0_18px_48px_rgba(18,43,32,0.14)] ${svc.feature ? "relative" : ""}`}
               >
                 <div
-                  className={`relative overflow-hidden bg-gradient-to-br from-gold-soft to-white ${svc.feature ? "h-[320px] sm:h-[380px]" : "h-52"}`}
+                  className={`relative overflow-hidden bg-gradient-to-br from-accent-soft to-white ${svc.feature ? "h-[320px] sm:h-[380px]" : "h-52"}`}
                 >
                   <Image
                     src={svc.image}
@@ -69,7 +69,7 @@ export default function Services() {
                   {svc.feature && (
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent px-6 pt-16 pb-6">
                       {svc.badge && (
-                        <span className="inline-block rounded-full bg-gold px-3 py-1 text-xs font-bold uppercase tracking-wide text-foreground mb-2">
+                        <span className="inline-block rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wide text-foreground mb-2">
                           {svc.badge}
                         </span>
                       )}

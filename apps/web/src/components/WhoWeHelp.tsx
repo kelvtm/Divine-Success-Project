@@ -5,7 +5,7 @@ export default function WhoWeHelp() {
     <section id="who" className="py-24 px-4 sm:px-6 bg-surface">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl mx-auto text-center mb-14">
-          <div className="text-xs font-bold tracking-[0.2em] uppercase text-copper mb-3">
+          <div className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-3">
             Who We Help
           </div>
           <h2 className="font-display font-bold text-4xl sm:text-5xl text-foreground">
@@ -15,8 +15,8 @@ export default function WhoWeHelp() {
 
         <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <Reveal>
-            <div className="h-full rounded-3xl border-2 border-copper bg-white p-10 shadow-[0_10px_40px_rgba(43,36,32,0.08)]">
-              <span className="inline-block rounded-full bg-copper px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white mb-5">
+            <div className="h-full rounded-3xl border-2 border-primary bg-white p-10 shadow-[0_10px_40px_rgba(18,43,32,0.08)]">
+              <span className="inline-block rounded-full bg-primary px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white mb-5">
                 Homes &amp; Families
               </span>
               <h3 className="font-display font-semibold text-2xl sm:text-3xl text-foreground mb-4">
@@ -35,14 +35,14 @@ export default function WhoWeHelp() {
                   "Real support on WhatsApp — talk to a person, not a bot",
                 ].map((item) => (
                   <li key={item} className="flex gap-3 text-ink-soft">
-                    <span className="text-copper font-bold">✓</span>
+                    <span className="text-primary font-bold">✓</span>
                     {item}
                   </li>
                 ))}
               </ul>
               <a
                 href="#contact"
-                className="inline-flex items-center rounded-xl bg-copper px-6 py-3.5 text-sm font-semibold text-white hover:bg-copper-light transition-colors"
+                className="inline-flex items-center rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-white hover:bg-primary-light transition-colors"
               >
                 Get a Free Quote
               </a>
@@ -51,7 +51,7 @@ export default function WhoWeHelp() {
 
           <Reveal>
             <div className="h-full rounded-3xl bg-foreground p-10 text-white">
-              <span className="inline-block rounded-full bg-gold px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-foreground mb-5">
+              <span className="inline-block rounded-full bg-accent px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-foreground mb-5">
                 Businesses
               </span>
               <h3 className="font-display font-semibold text-2xl sm:text-3xl mb-4">
@@ -70,14 +70,14 @@ export default function WhoWeHelp() {
                   "One-off jobs or ongoing waste contracts",
                 ].map((item) => (
                   <li key={item} className="flex gap-3 text-white/85">
-                    <span className="text-gold font-bold">✓</span>
+                    <span className="text-accent font-bold">✓</span>
                     {item}
                   </li>
                 ))}
               </ul>
               <a
                 href="#contact"
-                className="inline-flex items-center rounded-xl bg-gold px-6 py-3.5 text-sm font-semibold text-foreground hover:brightness-95 transition"
+                className="inline-flex items-center rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-foreground hover:brightness-95 transition"
               >
                 Talk To Us
               </a>
