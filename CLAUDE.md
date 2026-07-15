@@ -66,7 +66,8 @@ Content / brand facts (use these exactly)
 * Waste Carrier Reg. No.: CBDU647280 (show in trust strip + footer).
 * Registered address: 25 Shaftesbury Centre, Percy Street, Swindon, England, SN2 2AZ (registered office only — brand is "UK-based, covering the M4 corridor", do NOT centre the brand on Swindon).
 * Email: info@divinesuccess.co.uk · Website: divinesuccess.co.uk
-* WhatsApp: +44 7575 342732 (floating button, sticky).
+* Phone (virtual landline, primary public number): 01793 380797 — use for "call" contact points and LocalBusiness schema.
+* WhatsApp: +44 7575 342732 (floating button, sticky; wa.me links keep this number — landline is not WhatsApp-registered unless founder confirms).
 * LinkedIn: https://www.linkedin.com/company/divine-success/ · Facebook: /thedivinesucces/ · IG: /_divinesuccess · X: /_divinesuccess
 * Positioning: community first, nothing wasted, honest fixed prices, integrity/stewardship/accountability. Founded 2020.
 * SIC codes on file (46190, 47910, 45112, 49420) predate the pivot — waste-sector codes (e.g. 38110/38320) may need adding at Companies House; founder to confirm before we state them publicly.

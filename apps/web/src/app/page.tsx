@@ -19,7 +19,7 @@ const LOCAL_BUSINESS_SCHEMA = {
     "House, office and warehouse clearance plus waste management across the M4 corridor — London to Bristol. Licensed waste carrier. Reuse and recycling first, landfill last.",
   url: "https://divinesuccess.co.uk",
   email: "info@divinesuccess.co.uk",
-  telephone: "+447575342732",
+  telephone: "+441793380797",
   foundingDate: "2020",
   address: {
     "@type": "PostalAddress",

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Divine Success — A5 B2B Flyer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* A5 trim 148x210mm + 3mm bleed each side = 154x216mm. Safe zone: keep text >=11mm from page edge. */
+  @page { size: 154mm 216mm; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #15803d;
+    --primary-deep: #0e5c2b;
+    --ink: #122b20;
+    --ink-soft: #4e6558;
+    --lime: #9bc53d;
+    --lime-soft: #eaf4d3;
+    --surface: #eff4ee;
+    --line: #dde6dc;
+  }
+  html, body { width: 154mm; }
+  body { font-family: "Inter", sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 154mm; height: 216mm; position: relative; overflow: hidden; background: #ffffff; page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .display { font-family: "Bricolage Grotesque", sans-serif; }
+
+  /* ---------- FRONT ---------- */
+  .banner { position: absolute; top: 0; left: 0; right: 0; height: 78mm; }
+  .banner img { width: 100%; height: 100%; object-fit: cover; }
+  .banner::after { content: ""; position: absolute; inset: 0;
+    background: linear-gradient(165deg, rgba(18,43,32,0.78) 0%, rgba(18,43,32,0.35) 45%, rgba(21,128,61,0.45) 100%); }
+  .brand-row { position: absolute; top: 11mm; left: 11mm; display: flex; align-items: center; gap: 3mm; z-index: 2; }
+  .brand-name { color: #fff; font-weight: 700; font-size: 15pt; letter-spacing: 0.06em; }
+  .brand-sub { color: rgba(255,255,255,0.85); font-size: 7pt; letter-spacing: 0.24em; text-transform: uppercase; margin-top: 1mm; }
+  .banner-pill { position: absolute; left: 11mm; bottom: 6mm; z-index: 2; background: var(--lime); color: var(--ink);
+    font-weight: 700; font-size: 8pt; letter-spacing: 0.14em; text-transform: uppercase; padding: 2.2mm 5mm; border-radius: 10mm; }
+
+  .front-body { position: absolute; top: 78mm; left: 0; right: 0; bottom: 38mm; padding: 8mm 11mm 0; }
+  h1 { font-size: 26pt; line-height: 1.06; letter-spacing: -0.01em; font-weight: 800; }
+  h1 .green { color: var(--primary); }
+  .front-sub { margin-top: 4mm; font-size: 10pt; line-height: 1.5; color: var(--ink-soft); max-width: 126mm; }
+  .chips { margin-top: 5mm; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+  .chip { display: flex; align-items: center; gap: 2.5mm; background: var(--surface); border: 0.4mm solid var(--line);
+    border-radius: 3.5mm; padding: 2.6mm 4mm; font-size: 9pt; font-weight: 600; }
+  .chip .tick { color: var(--primary); font-weight: 800; }
+
+  .front-band { position: absolute; left: 0; right: 0; bottom: 0; height: 38mm; background: var(--primary);
+    color: #fff; padding: 6mm 11mm 8mm; display: flex; justify-content: space-between; align-items: flex-start; }
+  .band-hook { font-size: 15pt; font-weight: 700; line-height: 1.15; }
+  .band-note { margin-top: 2mm; font-size: 8.5pt; color: rgba(255,255,255,0.85); }
+  .band-contact { text-align: right; }
+  .band-phone { font-size: 15pt; font-weight: 800; letter-spacing: 0.01em; }
+  .band-links { margin-top: 2mm; font-size: 8.5pt; color: var(--lime-soft); }
+  .band-licence { position: absolute; left: 11mm; right: 11mm; bottom: 4.5mm; font-size: 7pt; color: var(--lime);
+    letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+
+  /* ---------- BACK ---------- */
+  .back-band { position: relative; height: 52mm; background: linear-gradient(135deg, var(--primary-deep), var(--primary));
+    color: #fff; padding: 13mm 11mm 0; }
+  .back-band h2 { font-size: 21pt; font-weight: 800; letter-spacing: -0.01em; }
+  .back-band .mantra { margin-top: 2.5mm; color: var(--lime); font-size: 10.5pt; font-weight: 700; }
+  .back-band p { margin-top: 2.5mm; font-size: 9pt; line-height: 1.5; color: rgba(255,255,255,0.88); max-width: 128mm; }
+
+  .back-body { padding: 8mm 11mm 0; }
+  .steps { display: grid; gap: 3.5mm; }
+  .step { display: flex; gap: 4mm; align-items: flex-start; }
+  .step-num { flex: none; width: 8.5mm; height: 8.5mm; border-radius: 50%; background: var(--lime); color: var(--ink);
+    display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 9.5pt; }
+  .step b { display: block; font-size: 10pt; margin-bottom: 0.8mm; }
+  .step span { font-size: 8.8pt; color: var(--ink-soft); line-height: 1.45; }
+
+  .why { margin-top: 7mm; }
+  .why h3 { font-size: 12pt; font-weight: 700; margin-bottom: 3mm; }
+  .why ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 5mm; }
+  .why li { font-size: 8.6pt; line-height: 1.4; color: var(--ink-soft); display: flex; gap: 2mm; }
+  .why li::before { content: "✓"; color: var(--primary); font-weight: 800; }
+
+  .contact-card { margin-top: 7mm; background: var(--surface); border: 0.4mm solid var(--line); border-radius: 5mm;
+    padding: 6mm 7mm; display: flex; justify-content: space-between; align-items: center; gap: 6mm; }
+  .contact-card h3 { font-size: 13pt; font-weight: 800; margin-bottom: 2.5mm; }
+  .contact-line { font-size: 9.5pt; margin-top: 1.6mm; }
+  .contact-line b { color: var(--primary); font-weight: 700; }
+  .qr-box { text-align: center; flex: none; }
+  .qr-box img { width: 27mm; height: 27mm; border-radius: 2.5mm; border: 0.5mm solid var(--line); background: #fff; }
+  .qr-box div { font-size: 7.5pt; font-weight: 600; color: var(--ink-soft); margin-top: 1.5mm; }
+
+  .back-footer { position: absolute; left: 0; right: 0; bottom: 0; background: var(--ink); color: rgba(255,255,255,0.75);
+    font-size: 7pt; text-align: center; padding: 4mm 11mm 5.5mm; line-height: 1.6; }
+  .back-footer b { color: #fff; }
+</style>
+</head>
+<body>
+
+  <!-- ================= FRONT ================= -->
+  <div class="page">
+    <div class="banner">
+      <img src="../../apps/web/public/images/office-clearance.jpg" alt="" />
+      <div class="banner-pill">For Offices · Warehouses · Commercial</div>
+    </div>
+    <div class="brand-row">
+      <svg width="42" height="42" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="64" height="64" rx="16" fill="#15803D" />
+        <g transform="translate(6.8 6.8) scale(2.1)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5" />
+          <path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12" />
+          <path d="m14 16-3 3 3 3" />
+          <path d="M8.293 13.596 7.196 9.5 3.1 10.598" />
+          <path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843" />
+          <path d="m13.378 9.633 4.096 1.098 1.097-4.096" />
+        </g>
+        <circle cx="52" cy="12" r="4" fill="#9BC53D" />
+      </svg>
+      <div>
+        <div class="brand-name display">DIVINE SUCCESS</div>
+        <div class="brand-sub">Clearance &amp; Waste Management</div>
+      </div>
+    </div>
+    <div class="front-body">
+      <h1 class="display">Office &amp; warehouse clearance,<br /><span class="green">without the downtime.</span></h1>
+      <p class="front-sub">
+        Out-of-hours and weekend clearances across the M4 corridor — London to Bristol.
+        Desks, IT, racking, stock and waste: gone before your team arrives Monday morning.
+      </p>
+      <div class="chips">
+        <div class="chip"><span class="tick">✓</span> Office clearance</div>
+        <div class="chip"><span class="tick">✓</span> Warehouse clearance</div>
+        <div class="chip"><span class="tick">✓</span> Ongoing waste contracts</div>
+        <div class="chip"><span class="tick">✓</span> WEEE-compliant IT disposal</div>
+        <div class="chip"><span class="tick">✓</span> House clearance</div>
+        <div class="chip"><span class="tick">✓</span> Probate &amp; end-of-tenancy</div>
+      </div>
+    </div>
+
+    <div class="front-band">
+      <div>
+        <div class="band-hook display">Free fixed quote<br />from photos</div>
+        <div class="band-note">WhatsApp us pictures — no site visit needed.</div>
+      </div>
+      <div class="band-contact">
+        <div class="band-phone display">01793 380797</div>
+        <div class="band-links">WhatsApp +44 7575 342732<br />info@divinesuccess.co.uk &nbsp;·&nbsp; divinesuccess.co.uk</div>
+      </div>
+      <div class="band-licence">Licensed Waste Carrier — Reg. No. CBDU647280</div>
+    </div>
+  </div>
+
+  <!-- ================= BACK ================= -->
+  <div class="page">
+    <div class="back-band">
+      <h2 class="display">Nothing good goes to waste.</h2>
+      <div class="mantra display">Reuse first. Recycle next. Landfill last.</div>
+      <p>
+        Usable furniture and equipment is donated or rehomed in the community, the rest responsibly
+        recycled — and anything with resale value can reduce your invoice.
+      </p>
+    </div>
+
+    <div class="back-body">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num display">1</div>
+          <div><b>Send photos, get a price</b><span>WhatsApp photos of the space and we return a fixed, free quote — fast, no obligation, no hidden extras.</span></div>
+        </div>
+        <div class="step">
+          <div class="step-num display">2</div>
+          <div><b>We clear it — out of hours</b><span>Evenings and weekends included, so your business keeps running while we work.</span></div>
+        </div>
+        <div class="step">
+          <div class="step-num display">3</div>
+          <div><b>Full paperwork, every job</b><span>Waste transfer notes and proof of responsible disposal for your compliance records.</span></div>
+        </div>
+      </div>
+
+      <div class="why">
+        <h3 class="display">Why companies choose Divine Success</h3>
+        <ul>
+          <li>Licensed waste carrier (CBDU647280)</li>
+          <li>WEEE-compliant IT &amp; electricals disposal</li>
+          <li>Waste transfer documentation provided</li>
+          <li>Reuse &amp; donation before landfill</li>
+          <li>Resale value offsets your cost</li>
+          <li>Family-run UK firm, since 2020</li>
+        </ul>
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <h3 class="display">Get your free quote</h3>
+          <div class="contact-line"><b>Call</b> &nbsp;01793 380797</div>
+          <div class="contact-line"><b>WhatsApp</b> &nbsp;+44 7575 342732</div>
+          <div class="contact-line"><b>Email</b> &nbsp;info@divinesuccess.co.uk</div>
+          <div class="contact-line"><b>Web</b> &nbsp;divinesuccess.co.uk</div>
+        </div>
+        <div class="qr-box">
+          <img src="qr.png" alt="QR code linking to divinesuccess.co.uk" />
+          <div>Scan for a quote</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-footer">
+      <b>Divine Success Ltd</b> · Reg. No. 12467975 · Waste Carrier Reg. No. CBDU647280<br />
+      25 Shaftesbury Centre, Percy Street, Swindon SN2 2AZ · Covering the M4 corridor — London to Bristol
+    </div>
+  </div>
+
+</body>
+</html>

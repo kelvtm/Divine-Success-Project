@@ -88,8 +88,15 @@ export default function Footer() {
             Swindon, England, SN2 2AZ
           </p>
           <a
-            href="mailto:info@divinesuccess.co.uk"
+            href="tel:+441793380797"
             className="inline-block mt-3 text-sm hover:text-accent transition-colors"
+          >
+            01793 380797
+          </a>
+          <br />
+          <a
+            href="mailto:info@divinesuccess.co.uk"
+            className="inline-block mt-1 text-sm hover:text-accent transition-colors"
           >
             info@divinesuccess.co.uk
           </a>

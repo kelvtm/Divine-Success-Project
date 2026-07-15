@@ -39,6 +39,12 @@ export default function EnquiryForm() {
             </p>
             <div className="space-y-3">
               <a
+                href="tel:+441793380797"
+                className="flex items-center gap-3 text-ink-soft hover:text-primary transition-colors"
+              >
+                📞 01793 380797
+              </a>
+              <a
                 href="mailto:info@divinesuccess.co.uk"
                 className="flex items-center gap-3 text-ink-soft hover:text-primary transition-colors"
               >
