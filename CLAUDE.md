@@ -58,7 +58,8 @@ Design direction — STATUS: APPROVED "Evergreen & Lime" (July 2026)
 
 * Founder chose a green sustainability palette, then asked for a brighter "actual green" primary. Tokens (globals.css, semantic names): background #F7FAF7, foreground #122B20, ink-soft #4E6558, surface #EFF4EE, line #DDE6DC, primary #15803D (vivid green, AA with white text), primary-light #16A34A (hover), accent #9BC53D (lime), accent-soft #EAF4D3.
 * Rules: lime accent is never a text-on-white colour and never carries white text — pair it with foreground ink. Primary carries white text.
-* Type pairing (Bricolage Grotesque + Inter), layout and components stay as-is. Logomark + icon.svg use primary/accent hexes directly — keep in sync with token changes.
+* Type pairing (Bricolage Grotesque + Inter), layout and components stay as-is.
+* Logo (July 2026): founder-supplied "hand holding globe with leaf" white line art on primary green — raster at apps/web/public/images/logo.png (1024px, bg recolored to primary #15803D) + apps/web/src/app/icon.png (256px favicon). Logomark.tsx renders it via next/image. If primary changes, re-recolor the PNG (source: founder's Canva export).
 * Earlier copper/gold system is retired; token names are semantic (primary/accent) so future palette changes are a globals.css + Logomark/icon.svg edit.
 Content / brand facts (use these exactly)
 
